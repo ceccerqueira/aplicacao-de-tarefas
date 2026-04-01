@@ -1,16 +1,41 @@
-# React + Vite
+**📝 Minha Lista de Tarefas (React)**
+Este é um projeto simples para criar, ver, editar e excluir tarefas. Ele salva tudo o que você escreve no seu próprio navegador, então as informações não somem quando você fecha a página.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**✨ O que o App faz?**
+Ver tarefas: Mostra todas as suas tarefas na tela inicial.
 
-Currently, two official plugins are available:
+Criar nova: Você pode adicionar um título e uma descrição para um novo afazer.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Editar: Se escreveu algo errado ou quer mudar a descrição, dá para editar.
 
-## React Compiler
+Excluir: Um botão simples para apagar a tarefa da lista.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Salvar automático: Usa o "LocalStorage" do seu navegador para guardar os dados.
 
-## Expanding the ESLint configuration
+**📁 Como o projeto está organizado?**
+src/context/: Aqui fica o "cérebro" que guarda a lista e as regras de como adicionar ou apagar tarefas.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+src/pages/: São as telas que você vê (Início, Criar e Editar).
+
+src/App.js: É quem manda o navegador mostrar a tela certa para cada link.
+
+src/App.css: Onde fica toda a parte visual (cores, tamanhos e botões).
+
+**🛠️ Como rodar no seu computador**
+Baixe as pastas do projeto para o seu computador.
+
+Abra o Terminal (ou CMD) dentro da pasta do projeto.
+
+Instale as ferramentas necessárias com o comando:
+
+Bash
+npm install
+Se o roteador de páginas não estiver instalado, use:
+
+Bash
+npm install react-router-dom@5
+Ligue o projeto com o comando:
+
+Bash
+npm start
+O seu navegador vai abrir o site em http://localhost:3000.
