@@ -1,0 +1,116 @@
+/* Configurações Globais */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #7fdfd0;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabeçalho - Home */
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+/* Lista, Itens */
+.lista-tarefas {
+  display: flex;
+  flex-direction: column;
+}
+
+.tarefa-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.tarefa-info h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.tarefa-info p {
+  margin: 5px 0 0 0;
+  color: #191a1a;
+  font-size: 14px;
+}
+
+.mensagem-vazia {
+  text-align: center;
+  color: #060606;
+  margin-top: 20px;
+}
+
+/* Botões */
+.btn-group {
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: #24465d;
+  color: white;
+}
+
+.btn-edit {
+  background-color: #e9cc58;
+  color: #2c3e50;
+}
+
+.btn-danger {
+  background-color: #dc4332;
+  color: white;
+}
+
+.btn:hover {
+  filter: brightness(0.9);
+  transform: translateY(-1px);
+}
+
+/* Formulários */
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #dcdde1;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.1);
+}
